@@ -59,7 +59,7 @@ fn main() -> Result<()> {
         .block_on()?;
 
     let mut surface_config = surface.get_default_config(&adapter, width, height).unwrap();
-    surface_config.format = wgpu::TextureFormat::Bgra8Unorm;
+    surface_config.format = wgpu::TextureFormat::Bgra8UnormSrgb;
     surface.configure(&device, &surface_config);
 
     let cat_pic = image::open("catfish.png")?.into_rgba8();
