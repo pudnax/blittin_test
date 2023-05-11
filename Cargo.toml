@@ -1,0 +1,16 @@
+[package]
+name = "blittin_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+bytemuck = { version = "1.13.1", features = ["derive"] }
+env_logger = "0.10.0"
+image = "0.24.6"
+log = "0.4.17"
+pollster = { version = "0.3.0", features = ["macro"] }
+wgpu = "0.16.0"
+winit = "0.28.5"
